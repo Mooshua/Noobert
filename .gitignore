@@ -50,6 +50,9 @@ typings/
 # Optional npm cache directory
 .npm
 
+# Package lock; let that install with npm-i
+package-lock
+
 # Optional eslint cache
 .eslintcache
 

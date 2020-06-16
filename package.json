@@ -1,0 +1,30 @@
+{
+  "name": "noobert",
+  "version": "1.0.0",
+  "description": "Advanced roblox bot, for discord.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "eslint": "^7.2.0",
+    "make-fetch-happen": "^8.0.7",
+    "mongoose": "^5.9.18",
+    "node-fetch": "^2.6.0",
+    "promise": "^8.1.0",
+    "tough-cookie": "^4.0.0",
+    "uid-safe": "^2.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mooshua/Noobert.git"
+  },
+  "author": "",
+  "license": "GNU GPLv3",
+  "bugs": {
+    "url": "https://github.com/Mooshua/Noobert/issues"
+  },
+  "homepage": "https://github.com/Mooshua/Noobert#readme"
+}
