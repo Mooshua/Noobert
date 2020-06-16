@@ -28,11 +28,10 @@ module.exports = class Group {
 					this.Public = GroupData.publicEntryAllowed
                     
 					Resolve()
-                })
-                .catch(Err => {
-                    if (Err) Reject(Err)
-                
-                })
+				})
+				.catch(Err => {
+					if (Err) Reject(Err)
+				})
 		})
 	}
 }
