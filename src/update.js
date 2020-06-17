@@ -117,7 +117,7 @@ async function Update() {
 					if (File.type == "dir") {
 						let More = await GrabFile(File.path, false, Stats.mtimeMs);
 
-						console.log(`${Chalk.green("SCOUTING")} Found ${Chalk.bold(File.path)}, downloading.`)
+						console.log(`${Chalk.green("SCOUTING")} Found ${Chalk.bold(File.path)}.`)
 
 						await Dive(More)
 					} else {
@@ -128,7 +128,7 @@ async function Update() {
 						);
 						let Raw = await Download(File.download_url)
 						
-						console.log(`${Chalk.blue("INSTALLING")} Installing ${File.name} `)
+						console.log(`${Chalk.blue("INSTALLING")} Installing ${File.name}.`)
 
 						FS.writeFileSync(Path, Raw)
 						
