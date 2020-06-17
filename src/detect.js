@@ -40,7 +40,7 @@ async function Detect() {
     if (Latest.Full > Version.Full) {
 
 
-        let ContentLength = 42;
+        let ContentLength = 45;
 
         /*eslint-disable */
 		
@@ -53,6 +53,9 @@ async function Detect() {
             `My latest version is ${Chalk.green(Latest.Parse)}`,
             `Run ${Chalk.bold(Chalk.blue(`npm run update`))} to update me!`,
             ``,
+            `Tip: run ${Chalk.blue(`npm run update --override`)} to`,
+            `force the update.`,
+            ``,
         ]
 
         let Raw = [
@@ -63,6 +66,9 @@ async function Detect() {
             `Right now i'm on ${Version.Parse}`,
             `My latest version is ${Latest.Parse}`,
             `Run npm run update to update me!`,
+            ``,
+            `Tip: run npm run update --override to`,
+            `force the update.`,
             ``,
         ]
 		

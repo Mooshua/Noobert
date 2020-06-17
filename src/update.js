@@ -3,8 +3,10 @@ const Path = require("path");
 const FS = require("fs");
 const Chalk = require("chalk");
 const Common = require("common-tags");
+const Yargs = require('yargs').argv
 
 const Settings = require("./config.json");
+const { argv } = require("process");
 
 function GrabCurrentVersion() {
 	let Package = require(`../package.json`);
@@ -43,7 +45,7 @@ async function GrabFile(Path, Parse, Modified) {
 		headers: {
 			"User-Agent": "Noobert auto-updater (github Mooshua/Noobert)",
 			"If-Modified-Since":
-				(Modified && new Date(Modified).toUTCString()) || undefined,
+				Yargs.override || (Modified && new Date(Modified).toUTCString()) || undefined,
 		},
 	});
 
