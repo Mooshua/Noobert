@@ -79,7 +79,7 @@ let Guild = new Schema({
 			},
 		],
 	},
-});
+})
 
 let Roblox = new Schema({
 	//  ROBLOX Id.
@@ -94,7 +94,7 @@ let Roblox = new Schema({
 
 	//  URL to thumbnail
 	Thumbnail: String,
-});
+})
 
 let Discord = new Schema({
 	//  Discord snowflake
@@ -106,4 +106,12 @@ let Discord = new Schema({
 			Date: Date,
 		},
 	],
-});
+
+	GuildData: [{
+		//	The array should be NUMBERED by the guildId.
+
+		//	Number of messages they have sent in a particular guild
+		//	We will store this for leveling.
+		Messages: Number,
+	}]
+})

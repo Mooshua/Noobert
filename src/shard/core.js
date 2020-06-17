@@ -23,7 +23,7 @@ Files.forEach((Script) => {
     let Pascal = (Name.charAt(0).toUpperCase()) + Name.substring(1,Name.length)
 
     if (File.toLowerCase() == "js") {
-        let Module = require(`${CoreDir}/${Name}`);
+        let Module = require(`${CoreDir}/${Name}`)
         module.exports[Pascal] = Module
     }
 })

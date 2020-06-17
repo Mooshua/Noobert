@@ -1,9 +1,0 @@
-{
-    "DiscordToken": "123",
-    "EncryptionKey": "abc",
-
-    "Database": {
-        "URL": "https://google.com",
-        "Database": "Noobert"
-    }
-}

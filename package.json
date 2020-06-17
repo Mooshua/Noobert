@@ -1,13 +1,16 @@
 {
   "name": "noobert",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "Advanced roblox bot, for discord.",
   "main": "index.js",
   "dependencies": {
     "axios": "^0.19.2",
+    "chalk": "^4.1.0",
+    "common-tags": "^1.8.0",
+    "discord.js": "^12.2.0",
     "eslint": "^7.2.0",
     "make-fetch-happen": "^8.0.7",
-    "mongoose": "^5.9.18",
+    "mongoose": "^5.9.19",
     "node-fetch": "^2.6.0",
     "promise": "^8.1.0",
     "tough-cookie": "^4.0.0",
@@ -15,7 +18,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "update": "node ./src/update.js"
   },
   "repository": {
     "type": "git",

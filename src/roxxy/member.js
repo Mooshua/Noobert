@@ -1,5 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 const Promise = require("promise")
-const User = require('./user')
+const User = require("./user")
 
 /*
     **IMPORTANT DISTINCTION**
@@ -10,7 +11,10 @@ const User = require('./user')
 
 module.exports = class Member extends User {
 
-    constructor(Client,Group,Id) {
-        super(Client,Id)
-    }
+	constructor(Client,Group,Id) {
+        super(Client, Id)
+        
+        //  Group should **NOT** be a number, but an initialized 
+        this.Group = Group
+	}
 }

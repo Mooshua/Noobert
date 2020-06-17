@@ -9,6 +9,7 @@
         "ecmaVersion": 11
     },
     "rules": {
+        "no-async-promise-executor": false,
         "indent": [
             "error",
             "tab"
